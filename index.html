@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor">
+        <!-- The textarea for code input -->
+        <textarea id="code" class="editor__textarea" placeholder="Write here...."></textarea>
+        <!-- Buttons for various operations -->
+        <div class="editor__buttons">
+            <button class="editor__button" onclick="copyCode()">Copy</button>
+            <button class="editor__button" onclick="saveCode()">Save</button>
+            <button class="editor__button" onclick="toggleLock()">Lock/Unlock</button>
+            <button class="editor__button" onclick="increaseIndent()">Indent</button>
+            <button class="editor__button" onclick="clearCode()">Clear All</button>
+
+            <!-- <button class="editor__button" onclick="decreaseIndent()">Unindent</button> -->
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
