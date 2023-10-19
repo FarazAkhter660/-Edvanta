@@ -16,8 +16,8 @@ function copyCode() {
 function saveCode() {
     if (!locked) {
         let code = codeElement.value;
-        // Here you can implement code to save to a server or local storage
-        alert('Code saved!');
+        // Here we can implement code to save to a server or local storage
+        alert(' Your Code is saved!');
     }
 }
 
@@ -43,10 +43,4 @@ function increaseIndent() {
         codeElement.setRangeText(indentedText, start, end);
         codeElement.setSelectionRange(start, end + lines.length - 1);
     }
-}
-
-// Function to clear all
-function clearCode() {
-    let codeElement = document.getElementById('code');
-    codeElement.value = ''; // Set the value of the textarea to an empty string
 }
